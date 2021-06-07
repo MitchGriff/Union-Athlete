@@ -1,0 +1,277 @@
+* {
+	box-sizing: border-box;
+}
+
+div {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: #000;
+  color: white;
+  border-bottom: solid #ccb54a 5px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+.main-nav a {
+	padding: 10px 10px;
+	text-align: center;
+	display: block;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+}
+
+.main-nav {
+  list-style: none;
+  text-align: center;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.main-nav li {
+  text-transform: uppercase;
+}
+
+.name {
+  text-align: center;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.logo {
+  background: #000; 
+  width: 100%;
+}
+
+/* Button things */
+
+.button-holder {
+  margin-top: -8px;
+  text-align: center;  
+  width: 100%;
+  padding: 6rem;
+  background-image: linear-gradient(#121443, #000);
+}
+
+.btn {
+  color: #121443;
+  background-color: #ccb54a;
+  border-bottom: 5px solid #a28f3a;
+  border-right: 5px solid #a28f3a;
+  text-align: center;
+  line-height: normal;
+  cursor: pointer;
+  padding: .25rem 3em; 
+  text-decoration: bold;
+}
+
+.btn-title {
+  font-size: 2.5rem;
+}
+
+.btn-sub-title {
+  font-size: 1.5rem;
+}
+
+.about-section {
+  padding: 20px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-box {
+  background: rgba(0,0,0,.7);
+  color: white;
+  padding: 20px;
+}
+
+.about-pic {
+  background: #000 url("images/codyHSPU.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px; 
+}
+
+.aside-pic {
+  background: #000 url("images/emilyOPT.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  background-position: 50% 20%;
+}
+
+.section-box h2 {
+  text-align: center;
+}
+
+.section-heading {
+  border-bottom: solid #BE1E2D 1px;
+  font-size: 3.5em;
+}
+
+.name{
+  font-size: 1.7em;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+}
+
+.main-nav a {
+  border: 3px solid black;
+}
+
+.main-nav a:hover{
+  border: 3px solid #121443;
+}
+
+.intro {
+  text-align: center;
+  padding: 50px;
+}
+
+.services-sub {
+  font-size: 2rem;
+}
+
+.coaches-section {
+  text-align: center;
+}
+
+.coaches-section {
+  background-color: #000;
+  color: #FFF;
+  padding: 1em;
+}
+
+.coaches-name {
+  font-size: 2.5em;
+}
+
+.coaches {
+  display: flex;
+  flex-direction: column;
+}
+
+.coach {
+  padding: 10px 2em;
+}
+
+.coach {
+  width: 100%;
+}
+
+.headshot {
+  object-fit: cover;
+  width: 100%;
+  max-height: 500px;
+}
+
+.bio {
+  text-align: left;
+}
+
+footer {
+  background-color: #000;
+  color: gray;
+}
+
+@media (min-width: 1000px) {
+  .main-header,
+  .main-nav {
+    display: flex; 
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-box {
+    width: 50%;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-pic {
+    height: auto;
+  }
+
+  .aside-pic {
+    height: auto;
+  }
+
+  .headshot {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+@media (min-width: 1025px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-section {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .section-box {
+    width: 60%;
+    padding: 6em;
+  }
+
+  .about-pic {
+    width: 40%;
+  }
+
+  .aside-pic {
+    width: 40%;
+  }
+
+  .coaches-section {
+    padding: 0 3em;
+  }
+
+  .coaches {
+    flex-direction: row;
+  }
+
+  .coach1 {
+    width: 33%;
+  }
+  .coach2 {
+    width: 34%;
+  }
+  .coach3 {
+    width: 33%;
+  }
+}
